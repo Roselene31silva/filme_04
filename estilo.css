@@ -1,14 +1,18 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins';
 }
-header{
+
+header {
     text-align: center;
     margin-bottom: 10px;
 }
 
-.banner{
+.banner {
     height: 500px;
     width: 100%;
     object-fit: cover;
@@ -16,7 +20,7 @@ header{
 }
 
 
-.lista-filmes{
+.lista-filmes {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,13 +29,142 @@ header{
     flex-wrap: wrap;
 }
 
-.card-filme{
-    border: 1px solid ;
+
+
+.card-filme {
+    border: 1px solid;
     padding: 5px;
 }
 
-.lista-filmes img{
+.lista-filmes img {
     width: 250px;
     height: 350px;
     object-fit: cover;
+}
+
+.lista-noticias {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.card-noticia {
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: start;
+    text-align: left;
+    gap: 15px;
+    border: 1px solid #ececec;
+    box-shadow: 0 0 5px #ececec;
+}
+
+.card-noticia img {
+    width: 250px;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+}
+
+footer img {
+    width: 100px;
+}
+
+footer small {
+    display: block;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.form-container {
+    background-color: #ececec;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    margin:20px auto;
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #e50914;
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    background-color: #2c2c2c;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    background-color: #e50914;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #bf0811;
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        padding: 30px 20px;
+    }
+}
+
+.container{
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container h2{
+    width: 100%;
+}
+
+.container img{
+    width: 300px;
+    margin: 10px 300px;
+}
+
+.container p{
+    margin: 0 50px;
 }
