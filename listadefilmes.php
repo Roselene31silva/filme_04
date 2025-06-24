@@ -20,7 +20,7 @@ include "cabecalho.php";
                 <div class="card-body">
                     <h5><?=$linha['titulo'];?></h5>
                     <p class="card-text">⭐<?=$linha['avaliacao'];?>/10</p>
-                    <a href="umfilme.php" class="btn btn-primary">Veja detalhes</a>
+                    <a href="umfilme.php?id=<?=$linha['id'];?>" class="btn btn-primary">Veja detalhes</a>
                 </div>
             </div>
         </div>

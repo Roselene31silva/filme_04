@@ -9,7 +9,7 @@ include "banner.php";
         <?php
        include "conexao.php";
  
-        $sql = "select * from filmes";
+        $sql = "select * from filmes limit 4";
         $resultado = mysqli_query($conexao, $sql);
  
         //echo "<pre>";
