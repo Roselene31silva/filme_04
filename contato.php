@@ -12,8 +12,6 @@ include "cabecalho.php";
    
             <label for="mensagem">Mensagem</label>
             <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem..." required></textarea>
-   
-            <button type="submit">Enviar</button>
         </form>
     </div>
     <?php include "rodape.php"; ?>
